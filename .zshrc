@@ -11,7 +11,7 @@ alias gping='ping 8.8.8.8'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias dotfilesdown='dotfiles fetch && dotfiles pull'
 alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
-
+alias ls='exa --group-directories-first --header --git -F -l'
 
 ###########
 # zsh config
