@@ -5,4 +5,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="$HOME/.emacs.d/bin:$PATH"
 alias gping='ping 8.8.8.8'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias dotfilesup='dotfiles fetch && dotfiles pull'
+alias dotfilesdown='dotfiles fetch && dotfiles pull'
+alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
