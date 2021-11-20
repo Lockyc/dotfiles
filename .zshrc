@@ -13,8 +13,16 @@ alias dotfilesdown='dotfiles fetch && dotfiles pull'
 alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
 alias ls='exa --group-directories-first --header --git -F -l'
 
+# confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
 ###########
 # zsh config
 ###########
 setopt share_history
 
+
+
+eval "$(starship init zsh)"
