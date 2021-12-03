@@ -35,9 +35,7 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-(setq
- projectile-project-search-path '(("~/github" . 3))
- )
+(setq projectile-project-search-path '(("~/github" . 3)))
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
