@@ -48,6 +48,7 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+(package! evil-tutor)
 (package! vue-mode)
 (package! ob-typescript)
 (package! prettier-js)

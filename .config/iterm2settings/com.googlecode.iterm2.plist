@@ -1902,7 +1902,7 @@
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
 	<key>TabStyleWithAutomaticOption</key>
-	<integer>6</integer>
+	<integer>4</integer>
 	<key>TabViewType</key>
 	<integer>1</integer>
 	<key>UIElementRequiresHotkeys</key>
