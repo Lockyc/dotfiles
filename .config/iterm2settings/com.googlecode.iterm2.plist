@@ -348,6 +348,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>EBE8D410-1FA9-46C4-A5D4-28D55B6808B9</string>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideFromDockAndAppSwitcher</key>
