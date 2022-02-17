@@ -127,6 +127,6 @@ alias rm='rm -i'
 ###########
 # zsh config
 ###########
-setopt share_history
+# setopt share_history
 
 eval "$(starship init zsh)"
