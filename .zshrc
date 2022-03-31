@@ -119,7 +119,7 @@ alias dotfilesdown='dotfiles fetch && dotfiles pull'
 alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; nativefier --upgrade $file'
-alias sysupgrade='brew upgrade && doom upgrade && npm update -g && nativefierupgrade'
+alias sysupgrade='brew upgrade && npm update -g && nativefierupgrade'
 
 # confirm before overwriting something
 alias cp="cp -i"
@@ -130,5 +130,6 @@ alias rm='rm -i'
 # zsh config
 ###########
 # setopt share_history
+unsetopt share_history
 
 eval "$(starship init zsh)"
