@@ -119,7 +119,7 @@ alias dotfilesdown='dotfiles fetch && dotfiles pull'
 alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; nativefier --upgrade $file'
-alias sysupgrade='brew upgrade && npm update -g && nativefierupgrade'
+alias sysupdate='brew upgrade && npm update -g && nativefierupgrade'
 
 # confirm before overwriting something
 alias cp="cp -i"
