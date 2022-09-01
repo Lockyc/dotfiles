@@ -118,8 +118,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias dotfilesdown='dotfiles fetch && dotfiles pull'
 alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
-alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; nativefier --upgrade $file'
-alias sysupdate='brew upgrade && npm update -g && nativefierupgrade && rustup self update && rustup update stable'
+alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; do nativefier --upgrade $file; done;'
+alias sysupdate='brew upgrade && npm update -g && rustup self update && rustup update stable && nativefierupgrade'
 
 # confirm before overwriting something
 alias cp="cp -i"
