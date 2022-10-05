@@ -7,6 +7,7 @@ open -a "/Applications/nativefier/Google Calendar-darwin-x64/Google Calendar.app
 open -a "/Applications/nativefier/Google Chat-darwin-x64/Google Chat.app"
 open -a "/Applications/nativefier/GanttPro-darwin-x64/GanttPro.app"
 open -a "/Applications/nativefier/Estimating Notes-darwin-x64/Estimating Notes.app"
+open -a "/Applications/nativefier/Estimating Resources-darwin-x64/Estimating Resources.app"
 open -a "monday.com"
 open -a "messages"
 open -a "slack"
