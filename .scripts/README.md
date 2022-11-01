@@ -23,3 +23,6 @@ sudo defaults delete com.apple.loginwindow LoginHook
 ```bash
 defaults write com.apple.loginwindow TALLogoutSavesState -bool false
 ```
+
+---
+<sup>[cheatsheet](https://github.com/Lockyc/cheatsheet) | [dotfiles](https://github.com/Lockyc/dotfiles)<sup>
