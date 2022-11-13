@@ -121,12 +121,30 @@ export PATH="/Users/lockyc/go/bin:$PATH"
 # Aliases
 ############
 alias gping='ping 8.8.8.8'
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
-alias dotfilesdown='dotfiles fetch && dotfiles pull'
-alias dotfilesup='dotfiles commit -a --allow-empty-message -m "" && dotfiles push'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; do nativefier --upgrade $file; done;'
 alias sysupdate='softwareupdate --all --install --force && brew upgrade && npm update -g && rustup self update && rustup update stable && nativefierupgrade'
+
+############
+# Functions
+############
+
+# Helper function to manage dotfiles in bare repository.
+# replaces previous aliases
+dotfiles() {
+	local dotfile_cmd="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
+	if [[ -z $1 ]] then
+		echo "Usage: $0 {down|up|status|<git commands>}"
+	elif [[ $1 = "up" ]] then
+		dotfiles down # grab updates first
+		eval ${dotfile_cmd} commit --allow-empty-message -am \"\" && eval ${dotfile_cmd} push
+	elif [[ $1 = "down" ]] then
+		eval ${dotfile_cmd} fetch && eval ${dotfile_cmd} pull
+	else
+		eval ${dotfile_cmd} $1
+	fi
+}
 
 # confirm before overwriting something
 alias cp="cp -i"
