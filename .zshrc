@@ -86,6 +86,7 @@ nvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
 	nvm $@
 }
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 export PATH="$HOME/.emacs.d/bin:$PATH"
@@ -135,3 +136,4 @@ dotfiles() {
 unsetopt share_history
 
 eval "$(starship init zsh)"
+
