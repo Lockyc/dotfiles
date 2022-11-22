@@ -100,7 +100,7 @@ export PATH="/Users/lockyc/go/bin:$PATH"
 alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; do nativefier --upgrade $file; done;'
-alias sysupdate='softwareupdate --all --install --force && brew upgrade && npm update -g && rustup self update && rustup update stable && nativefierupgrade'
+alias sysupdate='softwareupdate --all --install --force && brew update && brew upgrade && rustup self update && rustup update stable && nvm use node && npm install -g nativefier && npm update -g && nativefierupgrade'
 
 # confirm before overwriting something
 alias cp="cp -i"
