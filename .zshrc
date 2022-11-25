@@ -124,7 +124,7 @@ dotfiles() {
 	elif [[ $1 = "down" ]] then
 		eval ${dotfile_cmd} fetch && eval ${dotfile_cmd} pull
 	else
-		eval ${dotfile_cmd} $1
+		eval ${dotfile_cmd} ${@:1}
 	fi
 }
 
