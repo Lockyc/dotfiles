@@ -1,4 +1,5 @@
 # [loginfix.sh](loginfix.sh)
+Stop apps & windows opening on login from previous session
 ```bash
 #!/bin/bash
 echo "#!/bin/bash" > /tmp/loginfix.sh
