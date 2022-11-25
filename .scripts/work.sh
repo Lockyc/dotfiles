@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# "Startup" script for work environment
+
 osascript -e "set Volume 0"
 open -a "/Applications/nativefier/Gmail-darwin-x64/Gmail.app"
 open -a "/Applications/nativefier/Google Calendar-darwin-x64/Google Calendar.app"
