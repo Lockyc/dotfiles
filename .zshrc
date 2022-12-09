@@ -137,3 +137,7 @@ unsetopt share_history
 
 eval "$(starship init zsh)"
 
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/lockyc/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
