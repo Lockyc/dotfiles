@@ -25,7 +25,6 @@ source $ZSH/oh-my-zsh.sh
 ####################
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-export PATH="$HOME/.emacs.d/bin:$PATH"
 export PATH="/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/lockyc/go/bin:$PATH"
@@ -68,7 +67,6 @@ dotfiles() {
 ###########
 # zsh config
 ###########
-# setopt share_history
 unsetopt share_history
 
 eval "$(starship init zsh)"
