@@ -68,6 +68,7 @@ dotfiles() {
 # zsh config
 ###########
 unsetopt share_history
+setopt inc_append_history
 
 eval "$(starship init zsh)"
 
