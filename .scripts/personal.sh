@@ -4,4 +4,5 @@
 
 open -a "Mimestream"
 open -a "Firefox"
-open -a "Reeder"
+open -a "ReadKit"
+open -a "Twitter"
