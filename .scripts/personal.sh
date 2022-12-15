@@ -5,4 +5,3 @@
 open -a "Mimestream"
 open -a "Firefox"
 open -a "ReadKit"
-open -a "Twitter"
