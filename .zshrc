@@ -58,6 +58,14 @@ dotfiles() {
 	fi
 }
 
+dc(){
+	if [[ -z $1 ]] then
+		docker-compose up -d
+	else
+		docker-compose ${@:1}
+	fi
+}
+
 
 ###########
 # zsh config
