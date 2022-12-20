@@ -32,11 +32,6 @@ alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; do nativefier --upgrade $file; done;'
 alias sysupdate='softwareupdate --all --install --force && brew update && brew upgrade && rustup self update && rustup update stable && nvm use node && npm install -g nativefier && npm update -g && nativefierupgrade'
 
-# confirm before overwriting something
-alias cp="cp -i"
-alias mv='mv -i'
-alias rm='rm -i'
-
 ############
 # Functions
 ############
@@ -54,7 +49,7 @@ dotfiles() {
 	elif [[ $1 = "down" ]] then
 		eval ${dotfile_cmd} fetch && eval ${dotfile_cmd} pull
 	else
-		eval ${dotfile_cmd} ${@:1}
+		eval ${dotfile_cmd} $@
 	fi
 }
 
@@ -62,10 +57,14 @@ dc(){
 	if [[ -z $1 ]] then
 		docker-compose up -d
 	else
-		docker-compose ${@:1}
+		docker-compose $@
 	fi
 }
 
+mkdir(){
+	echo "Did you mean to use mkcd?"
+	/bin/mkdir $@
+}
 
 ###########
 # zsh config
