@@ -14,7 +14,7 @@ plugins=(git nvm)
 source $ZSH/oh-my-zsh.sh
 
 ####################
-# User configuration
+# PATH configuration
 ####################
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
