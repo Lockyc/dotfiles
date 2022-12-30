@@ -29,8 +29,6 @@ export PATH="/Users/lockyc/go/bin:$PATH"
 ############
 alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
-alias nativefierupgrade='for file in /Applications/nativefier/*/*.app; do nativefier --upgrade $file; done;'
-alias sysupdate='softwareupdate --all --install --force && brew update && brew upgrade && rustup self update && rustup update stable && nvm use node && npm install -g nativefier && npm update -g && nativefierupgrade'
 
 ############
 # Functions
@@ -64,6 +62,37 @@ dc(){
 mkdir(){
 	echo "Did you mean to use mkcd?"
 	/bin/mkdir $@
+}
+
+nativefierupgrade() {
+	NATIVEFIER_VERSION=$(nativefier --version)
+	REGEX='"nativefierVersion":\W?"'$NATIVEFIER_VERSION'"'
+
+	for file in /Applications/nativefier/*/*.app; do
+		if [[ $(grep -E $REGEX $file'/Contents/Resources/app/nativefier.json') ]]; then
+			echo "No update required for $file"
+		else
+			echo "Updating nativefier for $file"
+			nativefier --upgrade $file
+		fi
+	done;
+}
+
+sysupdate() {
+	# macos
+	softwareupdate --all --install --force
+	# Brew
+	brew update 
+	brew upgrade
+	# Rust
+	rustup self update
+	rustup update stable
+	# nvm & npm
+	nvm use node
+	npm update -g
+	# nativefier (Important to makesure nvm is updated first)
+	npm install -g nativefier
+	nativefierupgrade
 }
 
 ###########
