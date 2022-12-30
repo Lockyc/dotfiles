@@ -4,8 +4,6 @@ export ZSH="/Users/lockyc/.oh-my-zsh"
 ZSH_THEME="dracula-pro"
 
 zstyle ':omz:update' mode auto
-
-# Uncomment the following line to change how often to auto-update (in days).
 zstyle ':omz:update' frequency 1
 
 zstyle ':omz:plugins:nvm' lazy yes
