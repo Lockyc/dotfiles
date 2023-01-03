@@ -3,8 +3,7 @@ export ZSH="/Users/lockyc/.oh-my-zsh"
 
 ZSH_THEME="dracula-pro"
 
-zstyle ':omz:update' mode auto
-zstyle ':omz:update' frequency 1
+zstyle ':omz:update' mode reminder
 
 zstyle ':omz:plugins:nvm' lazy yes
 zstyle ':omz:plugins:nvm' lazy-cmd nativefier
@@ -82,6 +81,8 @@ nativefierupgrade() {
 sysupdate() {
 	# macos
 	softwareupdate --all --install --force
+	# oh my zsh
+	omz update
 	# Brew
 	brew update 
 	brew upgrade
