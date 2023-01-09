@@ -7,4 +7,3 @@ osascript -e "set Volume 0"
 open -a "Amphetamine"
 open -a "SlowQuitApps"
 open -a "Unsplash Wallpapers"
-open -a WezTerm
