@@ -57,6 +57,7 @@ _dotfiles() {
 
 compdef _dotfiles dotfiles
 
+# Docker Compose Helper
 dc(){
 	if [[ -z $1 ]] then
 		docker-compose up -d
@@ -65,11 +66,13 @@ dc(){
 	fi
 }
 
+# Reminder to use mkcd
 mkdir(){
 	echo "Did you mean to use mkcd?"
 	/bin/mkdir $@
 }
 
+# Update nativefier applications
 nativefierupgrade() {
 	NATIVEFIER_VERSION=$(nativefier --version)
 	REGEX='"nativefierVersion":\W?"'$NATIVEFIER_VERSION'"'
@@ -84,6 +87,7 @@ nativefierupgrade() {
 	done;
 }
 
+# Update macOS, installed applications etc
 sysupdate() {
 	# macos
 	softwareupdate --all --install --force
@@ -98,7 +102,7 @@ sysupdate() {
 	# nvm & npm
 	nvm use node
 	npm update -g
-	# nativefier (Important to makesure nvm is updated first)
+	# nativefier
 	npm install -g nativefier
 	nativefierupgrade
 }
