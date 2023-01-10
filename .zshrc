@@ -37,7 +37,7 @@ alias ls='exa --group-directories-first --header --git -F -l --icons'
 # Helper function to manage dotfiles in bare repository.
 # replaces previous aliases
 dotfiles() {
-	local dotfile_cmd="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+	local dotfile_cmd="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 	if [[ -z $1 ]] then
 		echo "Usage: $0 {down|up|status|<git commands>}"
