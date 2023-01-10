@@ -52,7 +52,7 @@ dotfiles() {
 }
 
 _dotfiles() { 
-  compadd up down 
+  compadd up down status add
 } 
 
 compdef _dotfiles dotfiles
