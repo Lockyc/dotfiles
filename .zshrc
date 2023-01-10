@@ -51,6 +51,12 @@ dotfiles() {
 	fi
 }
 
+_dotfiles() { 
+  compadd up down 
+} 
+
+compdef _dotfiles dotfiles
+
 dc(){
 	if [[ -z $1 ]] then
 		docker-compose up -d
