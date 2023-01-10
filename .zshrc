@@ -82,7 +82,7 @@ sysupdate() {
 	# macos
 	softwareupdate --all --install --force
 	# oh my zsh
-	omz update
+	omz update --unattended
 	# Brew
 	brew update 
 	brew upgrade
