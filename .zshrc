@@ -89,8 +89,12 @@ nativefierupgrade() {
 
 # Update macOS, installed applications etc
 sysupdate() {
-	# macos
-	softwareupdate --all --install --force
+	if [[ -z $1 ]] then
+		# macOS
+		softwareupdate --all --install --force
+	fi
+	# macOS app store
+	mas upgrade
 	# oh my zsh
 	omz update --unattended
 	# Brew
