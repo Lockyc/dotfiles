@@ -60,7 +60,7 @@ compdef _dotfiles dotfiles
 # Docker Compose Helper
 dc(){
 	if [[ -z $1 ]] then
-		docker-compose up -d
+		docker-compose pull && docker-compose up -d && docker-compose ps
 	else
 		docker-compose $@
 	fi
