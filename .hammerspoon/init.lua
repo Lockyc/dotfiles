@@ -9,7 +9,8 @@ hs.hotkey.bind({"alt"}, "1", function()
 end)
 
 hs.hotkey.bind({"alt"}, "2", function()
-  hs.application.launchOrFocus("Sublime Text.app")
+  hs.application.launchOrFocus("/Users/lockyc/github/Lockyc/scratchpad/out/scratchpad-darwin-x64/scratchpad.app")
+  -- hs.application.launchOrFocus("Sublime Text.app")
 end)
 
 hs.hotkey.bind({"alt"}, "3", function()
