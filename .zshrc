@@ -101,6 +101,7 @@ sysupdate() {
 	# Brew
 	brew update 
 	brew upgrade
+	brew cleanup
 	# Rust
 	rustup self update
 	rustup update stable
