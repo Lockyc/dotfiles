@@ -29,6 +29,7 @@ export PATH="/Users/lockyc/.rd/bin:$PATH"
 ############
 alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
+alias cat='bat'
 
 ############
 # Functions
