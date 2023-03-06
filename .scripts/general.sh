@@ -2,7 +2,6 @@
 
 # "Startup" script that can apply to every session
 
-brightness 1
 osascript -e "set Volume 0"
 open -a "SlowQuitApps"
 open -a "Unsplash Wallpapers"
