@@ -2,7 +2,6 @@ hs.loadSpoon("SpoonInstall")
 spoon.SpoonInstall:andUse("ReloadConfiguration")
 spoon.ReloadConfiguration:start()
 
-
 -- Hotkeys
 hs.hotkey.bind({"alt"}, "1", function()
   hs.application.launchOrFocus("WezTerm.app")
@@ -10,13 +9,11 @@ end)
 
 hs.hotkey.bind({"alt"}, "2", function()
   hs.application.launchOrFocus("/Users/lockyc/github/Lockyc/scratchpad/out/scratchpad-darwin-x64/scratchpad.app")
-  -- hs.application.launchOrFocus("Sublime Text.app")
 end)
 
 hs.hotkey.bind({"alt"}, "3", function()
   hs.application.launchOrFocus("Soulver 3.app")
 end)
-
 
 local function directoryLaunchKeyRemap(mods, key, dir)
     local mods = mods or {}
@@ -27,6 +24,5 @@ local function directoryLaunchKeyRemap(mods, key, dir)
 end
 
 directoryLaunchKeyRemap({"alt"}, "4", "~/Downloads") 
-
 
 hs.alert.show("Config loaded") 
