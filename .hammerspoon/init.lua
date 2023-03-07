@@ -18,4 +18,15 @@ hs.hotkey.bind({"alt"}, "3", function()
 end)
 
 
+local function directoryLaunchKeyRemap(mods, key, dir)
+    local mods = mods or {}
+    hs.hotkey.bind(mods, key, function()
+        local shell_command = "open " .. dir
+        hs.execute(shell_command)
+    end)
+end
+
+directoryLaunchKeyRemap({"alt"}, "4", "~/Downloads") 
+
+
 hs.alert.show("Config loaded") 
