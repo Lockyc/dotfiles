@@ -92,26 +92,50 @@ nativefierupgrade() {
 sysupdate() {
 	if [[ -z $1 ]] then
 		# macOS
+		banner "macOS"
 		softwareupdate --all --install --force
 	fi
 	# macOS app store
+	banner "macOS app store"
 	mas upgrade
+
 	# oh my zsh
+	banner "oh my zsh"
 	omz update --unattended
-	# Brew
+
+	# brew
+	banner "brew"
 	brew update 
 	brew upgrade
 	brew cleanup
-	# Rust
+
+	# rust
+	banner "rust"
 	rustup self update
 	rustup update stable
+
 	# nvm & npm
+	banner "nvm & npm"
 	nvm use node
 	npm update -g
+
 	# nativefier
+	banner "nativefier"
 	npm install -g nativefier
 	nativefierupgrade
+
+	banner "Done."
 }
+
+banner() {
+  printf "\n"
+  echo "+------------------------------------------+"
+  printf "| %-40s |\n" "`date`"
+  echo "|                                          |"
+  printf "|`tput bold` %-40s `tput sgr0`|\n" "$@"
+  echo "+------------------------------------------+"
+}
+
 
 ###########
 # zsh config
