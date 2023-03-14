@@ -1,1 +1,1 @@
-open -a "Google Chrome" --args --profile-directory="Profile 2"
+open -n -a "Google Chrome" --args --profile-directory="Profile 2"
