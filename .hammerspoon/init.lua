@@ -23,7 +23,7 @@ local function directoryLaunchKeyRemap(mods, key, dir)
     end)
 end
 
+directoryLaunchKeyRemap({"alt"}, "4", "'/Users/lockyc/Library/CloudStorage/GoogleDrive-lachlan@cairnspatios.com.au/Shared drives/Cairns Patios/Clients'") 
 directoryLaunchKeyRemap({"alt"}, "5", "~/Downloads") 
-directoryLaunchKeyRemap({"alt"}, "4", "'/Users/lockyc/Google Drive/Shared drives/Clients 03'") 
 
 hs.alert.show("Config loaded") 

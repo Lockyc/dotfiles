@@ -20,9 +20,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/lockyc/go/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
-export PATH="/Users/lockyc/.rd/bin:$PATH"
-### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
 ############
 # Aliases
@@ -30,6 +27,7 @@ export PATH="/Users/lockyc/.rd/bin:$PATH"
 alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias cat='bat'
+alias nativefierdefaults="nativefier --darwin-dark-mode-support --strict-internal-urls --single-instance"
 
 ############
 # Functions
