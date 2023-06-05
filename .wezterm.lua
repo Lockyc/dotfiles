@@ -1,7 +1,9 @@
-local wezterm = require 'wezterm';
-return {
-	font = wezterm.font("FiraCode Nerd Font Mono"),
-	color_scheme = "Dracula",
-	initial_rows = 50,
-	initial_cols = 160
-}
+local wezterm = require 'wezterm'
+local config = {}
+config.font = wezterm.font 'FiraCode Nerd Font Mono'
+config.window_close_confirmation = "NeverPrompt"
+config.color_scheme = "Dracula"
+config.initial_cols = 160
+config.initial_rows = 50
+
+return config

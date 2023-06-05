@@ -12,6 +12,8 @@ open -a "/Applications/nativefier/Estimating Resources-darwin-x64/Estimating Res
 open -n -a "Google Chrome" --args --profile-directory="Profile 1"
 open -n -a "Google Chrome" --args --profile-directory="Profile 44"
 open -a "monday.com"
+# open -a "BusyCal"
+# open -a "mimestream"
 open -a "messages"
 open -a "slack"
 open -a "music"
