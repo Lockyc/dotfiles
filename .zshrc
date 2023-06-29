@@ -72,12 +72,13 @@ mkdir(){
 }
 
 # Update nativefier applications
+# "-z $1", any parameters to force upgrade to ensure everything is updated and to avoid old build message instead of suppressing
 nativefierupgrade() {
 	NATIVEFIER_VERSION=$(nativefier --version)
 	REGEX='"nativefierVersion":\W?"'$NATIVEFIER_VERSION'"'
 
 	for file in /Applications/nativefier/*/*.app; do
-		if [[ $(grep -E $REGEX $file'/Contents/Resources/app/nativefier.json') ]]; then
+		if [[ -z $1 && $(grep -E $REGEX $file'/Contents/Resources/app/nativefier.json') ]]; then
 			echo "No update required for $file"
 		else
 			echo "Updating nativefier for $file"
@@ -87,6 +88,7 @@ nativefierupgrade() {
 }
 
 # Update macOS, installed applications etc
+# "-z $1", any parameters to skipp updating macos if we know there is pending update so update script doesnt hang
 sysupdate() {
 	if [[ -z $1 ]] then
 		# macOS
