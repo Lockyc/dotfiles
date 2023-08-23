@@ -94,10 +94,11 @@ sysupdate() {
 		# macOS
 		banner "macOS"
 		softwareupdate --all --install --force
+	
+		# macOS app store
+		banner "macOS app store"
+		mas upgrade
 	fi
-	# macOS app store
-	banner "macOS app store"
-	mas upgrade
 
 	# oh my zsh
 	banner "oh my zsh"
