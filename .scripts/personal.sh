@@ -5,6 +5,6 @@
 open -a "Mimestream"
 open -a "Firefox"
 open -a "ReadKit"
-# open -a "obsidian"
-open -a "calendar"
+open -a "obsidian"
+# open -a "calendar"
 open -a "Signal"

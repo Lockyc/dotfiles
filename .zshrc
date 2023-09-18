@@ -77,6 +77,8 @@ nativefierupgrade() {
 	NATIVEFIER_VERSION=$(nativefier --version)
 	REGEX='"nativefierVersion":\W?"'$NATIVEFIER_VERSION'"'
 
+	echo "Nativefier Version: "$NATIVEFIER_VERSION
+
 	for file in /Applications/nativefier/*/*.app; do
 		if [[ -z $1 && $(grep -E $REGEX $file'/Contents/Resources/app/nativefier.json') ]]; then
 			echo "No update required for $file"
