@@ -71,6 +71,14 @@ mkdir(){
 	/bin/mkdir $@
 }
 
+insta360FileCopy(){
+	bkupdir="/Users/lockyc/Desktop/TempFilesLongTerm.nosync/Insta360-Xfer-$(date +%Y_%m_%d_%H_%M_%S)"
+  mkdir -p "${bkupdir}$1"
+	cp /Volumes/Untitled/DCIM/Camera01/* "${bkupdir}$1"
+	open /Volumes/Untitled/DCIM/Camera01
+	open "${bkupdir}$1"
+}
+
 # Update nativefier applications
 # "-z $1", any parameters to force upgrade to ensure everything is updated and to avoid old build message instead of suppressing
 nativefierupgrade() {
@@ -119,6 +127,7 @@ sysupdate() {
 
 	# nvm & npm
 	banner "nvm & npm"
+	find ~/.nvm -name '.DS_Store' -type f -delete
 	nvm use node
 	npm update -g
 
