@@ -75,8 +75,8 @@ insta360FileCopy(){
 	bkupdir="/Users/lockyc/Desktop/TempFilesLongTerm.nosync/Insta360-Xfer-$(date +%Y_%m_%d_%H_%M_%S)"
   mkdir -p "${bkupdir}$1"
 	cp /Volumes/Untitled/DCIM/Camera01/* "${bkupdir}$1"
-	open /Volumes/Untitled/DCIM/Camera01
 	open "${bkupdir}$1"
+	open /Volumes/Untitled/DCIM/Camera01
 }
 
 # Update nativefier applications
