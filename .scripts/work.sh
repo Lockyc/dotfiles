@@ -4,6 +4,7 @@
 
 osascript -e "set Volume 0"
 open -a "/Applications/nativefier/Gmail-darwin-x64/Gmail.app"
+open -a "/Users/lockyc/Applications/Chrome Apps.localized/Gmail.app"
 # open -a "/Applications/nativefier/Gmail Cairns Patios-darwin-x64/Gmail Cairns Patios.app"
 # open -a "/Applications/nativefier/Google Calendar-darwin-x64/Google Calendar.app"
 # open -a "/Applications/nativefier/Calendar Cairns Patios-darwin-x64/Calendar Cairns Patios.app"
