@@ -5,7 +5,7 @@
 open -a "Mimestream"
 open -a "Firefox"
 open -a "ReadKit"
-oepn -a "Element"
+open -a "Element"
 # open "/Users/lockyc/Applications/ds.caf Element.app"
 # open -a "obsidian"
 # open -a "calendar"
