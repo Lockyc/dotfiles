@@ -124,7 +124,7 @@ sysupdate() {
 	brew update 
 	brew upgrade
 	brew cleanup
-	brew list > ~/.scripts/brew_programs_list.txt
+	brew list > ~/.scripts/brew_programs_list.txt # Reinstall all: xargs brew install < brew_programs_list.txt
 
 	# rust
 	banner "rust"
@@ -142,7 +142,11 @@ sysupdate() {
 	npm install -g nativefier
 	nativefierupgrade
 
-	banner "Done."
+	banner "Sysupdate Done."
+
+	banner "Status of dotfile repo"
+
+	dotfiles status
 }
 
 banner() {
