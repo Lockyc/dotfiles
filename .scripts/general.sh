@@ -4,3 +4,4 @@
 
 osascript -e "set Volume 0"
 open -a "SlowQuitApps"
+open -a "Unsplash Wallpapers"

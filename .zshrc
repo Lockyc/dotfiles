@@ -28,6 +28,7 @@ alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias cat='bat'
 alias nativefierdefaults="nativefier --darwin-dark-mode-support --strict-internal-urls --single-instance"
+alias config="code .scripts && code .zshrc"
 
 ############
 # Functions
@@ -123,6 +124,7 @@ sysupdate() {
 	brew update 
 	brew upgrade
 	brew cleanup
+	brew list > ~/.scripts/brew_programs_list.txt
 
 	# rust
 	banner "rust"
@@ -159,4 +161,5 @@ banner() {
 unsetopt share_history
 setopt inc_append_history
 
+eval "$(mcfly init zsh)"
 eval "$(starship init zsh)"
