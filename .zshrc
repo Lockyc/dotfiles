@@ -73,14 +73,14 @@ mkdir(){
 }
 
 insta360FileCopy(){
-	bkupdir="/Users/lockyc/Desktop/TempFilesLongTerm.nosync/Insta360-Xfer-$(date +%Y_%m_%d_%H_%M_%S)"
-	bkupdir2="/Volumes/Cairns Patios/Insta360-Xfer-$(date +%Y_%m_%d_%H_%M_%S)"
+	bkupdir="/Users/lockyc/TempFilesLongTerm/Insta360-Xfer-$(date +%Y_%m_%d_%H_%M_%S)"
+	# bkupdir2="/Volumes/Cairns Patios/Insta360-Xfer-$(date +%Y_%m_%d_%H_%M_%S)"
   mkdir -p "${bkupdir}$1"
-  mkdir -p "${bkupdir2}$1"
+  # mkdir -p "${bkupdir2}$1"
 	cp /Volumes/Untitled/DCIM/Camera01/* "${bkupdir}$1"
-	cp /Volumes/Untitled/DCIM/Camera01/* "${bkupdir2}$1"
+	# cp /Volumes/Untitled/DCIM/Camera01/* "${bkupdir2}$1"
 	open "${bkupdir}$1"
-	open "${bkupdir2}$1"
+	# open "${bkupdir2}$1"
 	open /Volumes/Untitled/DCIM/Camera01
 }
 
