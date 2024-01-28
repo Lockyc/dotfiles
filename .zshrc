@@ -27,7 +27,7 @@ export PATH="/Users/lockyc/go/bin:$PATH"
 alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias cat='bat'
-alias nativefierdefaults="nativefier --darwin-dark-mode-support --strict-internal-urls --single-instance"
+alias nativefierdefaults="nativefier --darwin-dark-mode-support --strict-internal-urls --single-instance --disable-old-build-warning-yesiknowitisinsecure"
 alias config="code .scripts && code .zshrc"
 
 ############
