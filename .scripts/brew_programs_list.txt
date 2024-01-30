@@ -26,6 +26,7 @@ fontconfig
 freetype
 frei0r
 fribidi
+gcc
 gdbm
 gettext
 gh
@@ -43,9 +44,11 @@ harfbuzz
 highway
 htop
 hugo
+hwloc
 icu4c
 imagemagick
 imath
+isl
 jasper
 jbig2dec
 jpeg
@@ -67,6 +70,7 @@ libidn2
 liblinear
 liblqr
 libmicrohttpd
+libmpc
 libnghttp2
 libogg
 libolm
@@ -80,6 +84,7 @@ libsamplerate
 libsndfile
 libsodium
 libsoxr
+libssh
 libssh2
 libtasn1
 libtermkey
@@ -111,6 +116,7 @@ mas
 mbedtls
 mcfly
 mpdecimal
+mpfr
 mpg123
 mpv
 msgpack
@@ -120,13 +126,16 @@ neofetch
 neovim
 nettle
 nmap
+numpy
 nushell
 oniguruma
+openblas
 opencore-amr
 openexr
 openjpeg
 openssl@1.1
 openssl@3
+openvino
 opus
 osx-cpu-temp
 p11-kit
@@ -136,6 +145,7 @@ pcre2
 pixman
 pkg-config
 progress
+pugixml
 python-brotli
 python-certifi
 python-markupsafe
@@ -158,6 +168,7 @@ sqlite
 srt
 starship
 svt-av1
+tbb
 tesseract
 theora
 topgrade
