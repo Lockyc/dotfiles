@@ -28,7 +28,7 @@ alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias cat='bat'
 alias nativefierdefaults="nativefier --darwin-dark-mode-support --strict-internal-urls --single-instance --disable-old-build-warning-yesiknowitisinsecure"
-alias config="code ~\.scripts && code ~\.zshrc"
+alias config="code ~/.scripts && code ~/.zshrc"
 
 ############
 # Functions
@@ -167,4 +167,3 @@ setopt inc_append_history
 
 eval "$(mcfly init zsh)"
 eval "$(starship init zsh)"
-source /Users/lockyc/.npm-run.plugin.zsh/npm-run.plugin.zsh
