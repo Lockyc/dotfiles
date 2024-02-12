@@ -206,6 +206,5 @@ maccy
 macfuse
 middleclick
 phoenix
-reminders-menubar
 spaceman
 wezterm
