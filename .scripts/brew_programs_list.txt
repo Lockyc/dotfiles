@@ -26,6 +26,7 @@ fontconfig
 freetype
 frei0r
 fribidi
+fzf
 gcc
 gdbm
 gettext
@@ -190,6 +191,7 @@ xz
 yt-dlp
 zeromq
 zimg
+zoxide
 zstd
 browserosaurus
 clocker

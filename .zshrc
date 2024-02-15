@@ -167,3 +167,5 @@ setopt inc_append_history
 
 eval "$(mcfly init zsh)"
 eval "$(starship init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
