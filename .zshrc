@@ -28,7 +28,7 @@ alias gping='ping 8.8.8.8'
 alias ls='exa --group-directories-first --header --git -F -l --icons'
 alias cat='bat'
 alias nativefierdefaults="nativefier --darwin-dark-mode-support --strict-internal-urls --single-instance --disable-old-build-warning-yesiknowitisinsecure"
-alias config="code ~/.scripts && code ~/.zshrc"
+alias config="code ~/.scripts && code ~/.zshrc && code ~/.hammerspoon/init.lua"
 
 ############
 # Functions
